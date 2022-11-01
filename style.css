@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    padding: 40px;
+    padding: 20px;
     background-color: rgb(255, 173, 186);
     border: dashed;
     border-color: black;
@@ -26,7 +26,7 @@ header {
 }
 
 div.typeone {
-    margin: 20px;
+    margin: 15px;
     padding: 10px;
     border-radius: 10px;
     border: solid;
