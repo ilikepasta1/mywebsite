@@ -60,7 +60,7 @@ button.submitbutton {
     border-color: black;
     border-width: 2px;
     cursor: pointer;
-    background-color: pink;
+    background-color: rgb(243, 239, 239);
 }
 
 input.textinput {
@@ -69,4 +69,10 @@ input.textinput {
     border-width: 2px;
     border-color: black;
     border-radius: 5px;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin: 10px;
 }

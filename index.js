@@ -17,3 +17,41 @@ textboxButton.onclick = function () {
     const name = textboxName.value
     document.getElementById('nameoutput').innerHTML = "Hello " + name
 }
+
+const sideatext = document.getElementById("sideainput")
+const sidebtext = document.getElementById("sidebinput")
+const sidecoutput = document.getElementById("coutput")
+const calcbutton = document.getElementById("coutputbutton")
+
+calcbutton.onclick = function () {
+    let sidea = sideatext.value
+    sidea = Number(sidea)
+
+    let sideb = sidebtext.value
+    sideb = Number(sideb)
+
+    const output = Math.sqrt(Math.pow(sidea, 2) + Math.pow(sideb, 2))
+    sidecoutput.innerHTML = "The length of side c is: " + output
+}
+
+const todoaddbutton = document.getElementById("todoadd")
+const todoslist = document.getElementById("todos")
+const todoaddbox = document.getElementById("todotextbox")
+
+let todosarray = []
+
+todoaddbutton.onclick = function () {
+    let li = document.createElement('li')
+    li.appendChild(document.createTextNode(todoaddbox.value));
+    todosarray.push(todoaddbox.value)
+    localStorage.setItem("todos", JSON.stringify(todosarray))
+    todoslist.appendChild(li)
+}
+
+todosarray = JSON.parse(localStorage.getItem("todos"))
+
+todosarray.forEach (todo => {
+    let li = document.createElement('li')
+    li.appendChild(document.createTextNode(todo))
+    todoslist.appendChild(li)
+})
