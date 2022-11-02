@@ -13,41 +13,43 @@
     <header>
         <h1>ilikepasta1 website</h1>
     </header>
-    <div class="typeone">
-        <h2>input your name!</h2>
-        <div class="centeritem">
-            <input type="text" class="textinput" id="nameinput">
+    <div class="centerall">
+        <div class="typeone">
+            <h2>input your name!</h2>
+            <div class="centeritem">
+                <input type="text" class="textinput" id="nameinput">
+            </div>
+            <div class="centeritem">
+                <button class="submitbutton" id="namebutton">Submit</button>
+            </div>
+            <p class="nameout" id="nameoutput">Hello</p>
         </div>
-        <div class="centeritem">
-            <button class="submitbutton" id="namebutton">Submit</button>
+        <div class="typeone">
+            <h2>calculate the hypotenuse of a right triangle</h2>
+            <p class="nameout">Input side 'a':</p>
+            <div class="centeritem">
+                <input type="text" class="textinput" id="sideainput">
+            </div>
+            <p class="nameout">Input side 'b':</p>
+            <div class="centeritem">
+                <input type="text" class="textinput" id="sidebinput">
+            </div>
+            <p></p>
+            <div class="centeritem">
+                <button class="submitbutton" id="coutputbutton">Calculate</button>
+            </div>
+            <p class="nameout" id="coutput">The length of side c is:</p>
         </div>
-        <p class="nameout" id="nameoutput">Hello</p>
-    </div>
-    <div class="typeone">
-        <h2>calculate the hypotenuse of a right triangle</h2>
-        <p class="nameout">Input side 'a':</p>
-        <div class="centeritem">
-            <input type="text" class="textinput" id="sideainput">
+        <div class="typeone">
+            <h2>Todo list</h2>
+            <div class="centeritem">
+                <input type="text" class="textinput" id="todotextbox">
+            </div>
+            <div class="centeritem">
+                <button class="submitbutton" id="todoadd">Submit</button>
+            </div>
+            <ul id="todos"></ul>
         </div>
-        <p class="nameout">Input side 'b':</p>
-        <div class="centeritem">
-            <input type="text" class="textinput" id="sidebinput">
-        </div>
-        <p></p>
-        <div class="centeritem">
-            <button class="submitbutton" id="coutputbutton">Calculate</button>
-        </div>
-        <p class="nameout" id="coutput">The length of side c is:</p>
-    </div>
-    <div class="typeone">
-        <h2>Todo list</h2>
-        <div class="centeritem">
-            <input type="text" class="textinput" id="todotextbox">
-        </div>
-        <div class="centeritem">
-            <button class="submitbutton" id="todoadd">Submit</button>
-        </div>
-        <ul id="todos"></ul>
     </div>
     <script src="index.js"></script>
 </body>

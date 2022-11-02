@@ -41,6 +41,11 @@ div.typeone {
     background-color: rgb(255, 173, 186);
 }
 
+div.centerall {
+    display: flex;
+    width: 100px;
+}
+
 div.centeritem {
     display: flex;
     justify-content: center;
