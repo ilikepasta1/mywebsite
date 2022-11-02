@@ -48,7 +48,12 @@ todoaddbutton.onclick = function () {
     todoslist.appendChild(li)
 }
 
-todosarray = JSON.parse(localStorage.getItem("todos"))
+const hastodos = JSON.parse(localStorage.getItem("todos"))
+if (hastodos == null) {
+    todosarray = []
+} else {
+    todosarray = hastodos
+}
 
 todosarray.forEach (todo => {
     let li = document.createElement('li')
