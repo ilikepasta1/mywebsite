@@ -12,6 +12,12 @@ p.ptypeone {
     font-family: 'Courier New', Courier, monospace;
 }
 
+p.nameout {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    text-align: center;
+}
+
 body {
     margin: 0;
     background-color: rgb(255, 208, 215);
@@ -38,4 +44,28 @@ div.typeone {
 
 div.typeone:hover {
     margin: 10px;
+}
+
+div.centeritem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.submitbutton {
+    margin-top: 5px;
+    border-radius: 5px;
+    border: solid;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: black;
+    border-width: 2px;
+    cursor: pointer;
+    background-color: pink;
+}
+
+input.textinput {
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;
 }

@@ -9,3 +9,11 @@ for (let i = 0; i < rows; i += 1) {
     console.log(output)
     output = ''
 }
+
+const textboxName = document.getElementById("nameinput")
+const textboxButton = document.getElementById("namebutton")
+
+textboxButton.onclick = function () {
+    const name = textboxName.value
+    document.getElementById('nameoutput').innerHTML = "Hello " + name
+}
