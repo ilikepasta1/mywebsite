@@ -65,6 +65,7 @@ button.submitbutton {
 
 input.textinput {
     border: solid;
+    text-align: center;
     border-width: 2px;
     border-color: black;
     border-radius: 5px;
