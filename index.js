@@ -62,10 +62,9 @@ todosarray.forEach (todo => {
 })
 
 const countaddbutton = document.getElementById("counterbutton")
-const countoutput = document.getElementById("countout")
 let count = 0
 
 countaddbutton.onclick = function () {
     count++
-    countoutput.innerHTML = "count: " + count
+    countaddbutton.innerHTML = "count is: " + count
 }
