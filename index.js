@@ -55,3 +55,12 @@ todosarray.forEach (todo => {
     li.appendChild(document.createTextNode(todo))
     todoslist.appendChild(li)
 })
+
+const countaddbutton = document.getElementById("counterbutton")
+const countoutput = document.getElementById("countout")
+let count = 0
+
+countaddbutton.onclick = function () {
+    count++
+    countoutput.innerHTML = "count: " + count
+}
