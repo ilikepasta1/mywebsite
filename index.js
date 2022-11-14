@@ -68,3 +68,27 @@ countaddbutton.onclick = function () {
     count++
     countaddbutton.innerHTML = "count is: " + count
 }
+
+const xoneinput = document.getElementById("xpointone")
+const xtwoinput = document.getElementById("xpointtwo")
+const yoneinput = document.getElementById("ypointone")
+const ytwoinput = document.getElementById("ypointtwo")
+const slopecalcbutton = document.getElementById("slopecalcbutton")
+const slopeoutput = document.getElementById("slopeout")
+
+slopecalcbutton.onclick = function () {
+    let xone = xoneinput.value
+    xone = Number(xone)
+
+    let xtwo = xtwoinput.value
+    xtwo = Number(xtwo)
+
+    let yone = yoneinput.value
+    yone = Number(yone)
+
+    let ytwo = ytwoinput.value
+    ytwo = Number(ytwo)
+
+    const output = ytwo - yone / xtwo - xone
+    slopeoutput.innerHTML = "slope output: " + output
+}
